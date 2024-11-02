@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biro Jasa Konsultasi Pajak</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-md py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="text-xl font-bold flex items-center">
+        <img src="images/logo_ASG.png" alt="ALMAHYRA SUKSES GROUP" class="h-10 mr-2">
+        ALMAHYRA SUKSES GROUP
+      </a>
+      <nav class="flex space-x-6">
+        <a href="index.html" class="hover:text-gray-400">Home</a>
+        <a href="about.html" class="hover:text-gray-400">About</a>
+        <a href="visimisi.html" class="hover:text-gray-400">Visi Misi</a>
+        <a href="client.html" class="hover:text-gray-400">Client</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-2/3">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Biro Jasa Account and Management</h1>
+          <p class="text-lg md:text-2xl mb-6">The Future of Management.</p>
+          <a href="#" class="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded">Get Started</a>
+        </div>
+        <div class="md:w-1/3 mt-8 md:mt-0">
+          <img src="images/logo_ASG.png" alt="Logo" class="w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h3 class="text-4xl font-bold text-blue-500 mb-4">Kami ada di sini untuk membantu</h3>
+        </div>
+        <div class="md:w-1/2 text-gray-300">
+          <h4 class="text-2xl font-semibold mb-2">Apa yang kita lakukan?</h4>
+          <p>Perusahaan ini didirikan pada tahun 2022 dengan misi memberikan solusi sebagai mitra konsultan pajak terpercaya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-500 mb-12">OTHER SERVICES</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 cursor-pointer" onclick="showPopup('Membantu Perusahaan dalam pengajuan pemenuhan administratif perpajakan.')">
+          <div class="flex items-center justify-center mb-4 text-blue-500 text-4xl">
+            <i class="fas fa-file-invoice"></i>
+          </div>
+          <h5 class="text-xl font-semibold text-center">Tax Administration Services</h5>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 cursor-pointer" onclick="showPopup('Jasa konsultasi perpajakan rutin atau insidentil.')">
+          <div class="flex items-center justify-center mb-4 text-blue-500 text-4xl">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h5 class="text-xl font-semibold text-center">Tax Consulting Services</h5>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 cursor-pointer" onclick="showPopup('Pemenuhan kewajiban perpajakan sesuai peraturan.')">
+          <div class="flex items-center justify-center mb-4 text-blue-500 text-4xl">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h5 class="text-xl font-semibold text-center">Tax Compliance Services</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-500 mb-12">Contact Us</h2>
+      <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+        <div class="md:w-1/2 space-y-4">
+          <p class="text-gray-300">Hubungi kami untuk informasi lebih lanjut atau konsultasi langsung.</p>
+          <p class="text-gray-300"><strong>Email:</strong> info@almakhyrasukses.com</p>
+          <p class="text-gray-300"><strong>Phone:</strong> +62 123-4567-890</p>
+          <p class="text-gray-300"><strong>Address:</strong> Jl. Contoh No.123, Jakarta, Indonesia</p>
+        </div>
+        <div class="md:w-1/2">
+          <form class="space-y-4">
+            <input type="text" placeholder="Name" class="w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded focus:outline-none">
+            <input type="email" placeholder="Email" class="w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded focus:outline-none">
+            <textarea placeholder="Message" class="w-full px-4 py-2 bg-gray-900 text-white border border-gray-700 rounded focus:outline-none"></textarea>
+            <button type="submit" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Modal -->
+  <div id="myPopup" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 hidden">
+    <div class="bg-gray-800 p-8 rounded-lg max-w-md w-full">
+      <span class="text-gray-400 text-2xl cursor-pointer float-right" onclick="closePopup()">&times;</span>
+      <h5 class="text-2xl font-bold mb-4 text-white">Informasi Tambahan</h5>
+      <p id="popupText" class="text-gray-300">Ini adalah informasi tambahan.</p>
+    </div>
+  </div>
+
+  <script>
+    function showPopup(content) {
+      document.getElementById("popupText").innerText = content;
+      document.getElementById("myPopup").classList.remove("hidden");
+    }
+    function closePopup() {
+      document.getElementById("myPopup").classList.add("hidden");
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 All Rights Reserved By <a href="https://html.design/" class="text-blue-400 hover:underline">ALMAHYRA SUKSES GROUP</a></p>
+    </div>
+  </footer>
+</body>
+</html>
