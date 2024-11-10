@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - ALMAHYRA SUKSES GROUP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <header class="bg-gray-800 shadow-md py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <a href="index.html" class="text-xl font-bold flex items-center">
+          <img
+            src="images/logo_ASG.png"
+            alt="ALMAHYRA SUKSES GROUP"
+            class="h-10 mr-2"
+          />
+          ALMAHYRA SUKSES GROUP
+        </a>
+        <nav class="flex space-x-6">
+          <a href="index.html" class="hover:text-gray-400">Home</a>
+          <a href="about.html" class="hover:text-gray-400">About</a>
+          <a href="service.html" class="hover:text-blue-500 font-bold"
+            >Service</a
+          >
+          <a href="client.html" class="hover:text-gray-400">Client</a>
+          <a href="contact.html" class="hover:text-gray-400">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-900">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-blue-500 mb-12">Our Services</h2>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('taxCompliance')"
+          >
+            <i
+              class="fas fa-file-invoice-dollar text-4xl text-blue-500 mb-4"
+            ></i>
+            <h3 class="text-xl font-bold">Pemenuhan Pajak</h3>
+            <p class="text-gray-300 mt-2">
+              Layanan pemenuhan kewajiban perpajakan yang tepat waktu dan sesuai
+              regulasi.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('taxConsulting')"
+          >
+            <i class="fas fa-handshake text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Biro Jasa Konsultasi Pajak</h3>
+            <p class="text-gray-300 mt-2">
+              Konsultasi profesional dalam mengelola pajak perusahaan Anda.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('taxReview')"
+          >
+            <i class="fas fa-search-dollar text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Ulasan Pajak</h3>
+            <p class="text-gray-300 mt-2">
+              Peninjauan laporan perpajakan untuk memastikan akurasi dan
+              kepatuhan.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('taxDispute')"
+          >
+            <i class="fas fa-balance-scale text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Sengketa Pajak</h3>
+            <p class="text-gray-300 mt-2">
+              Bantuan dalam penyelesaian sengketa perpajakan secara profesional.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('bookkeeping')"
+          >
+            <i class="fas fa-book text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Pembukuan</h3>
+            <p class="text-gray-300 mt-2">
+              Jasa pembukuan yang rapi dan akurat untuk mendukung operasional
+              bisnis.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('payroll')"
+          >
+            <i class="fas fa-money-check-alt text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Outsourcing Penggajian</h3>
+            <p class="text-gray-300 mt-2">
+              Layanan pengelolaan gaji yang efektif dan tepat waktu.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('transferPricing')"
+          >
+            <i class="fas fa-file-invoice text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Dokumentasi Harga Transfer</h3>
+            <p class="text-gray-300 mt-2">
+              Layanan dokumentasi harga transfer sesuai regulasi perpajakan.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('corporateSecretary')"
+          >
+            <i class="fas fa-user-tie text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Sekretaris Perusahaan</h3>
+            <p class="text-gray-300 mt-2">
+              Layanan sekretaris perusahaan untuk memudahkan operasional bisnis.
+            </p>
+          </div>
+
+          <!-- Service Item -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 cursor-pointer"
+            onclick="openModal('otherServices')"
+          >
+            <i class="fas fa-ellipsis-h text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Layanan Lainnya</h3>
+            <p class="text-gray-300 mt-2">
+              Berbagai layanan tambahan untuk kebutuhan bisnis Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div
+      id="serviceModal"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden"
+    >
+      <div
+        class="bg-gray-800 p-8 rounded-lg shadow-lg w-11/12 sm:w-2/3 lg:w-1/2"
+      >
+        <h3 id="modalTitle" class="text-2xl font-bold text-blue-500 mb-4"></h3>
+        <p id="modalContent" class="text-gray-300 mb-8"></p>
+        <button
+          onclick="closeModal()"
+          class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+      <div class="container mx-auto text-center">
+        <p>
+          &copy; 2024 All Rights Reserved By
+          <a href="https://html.design/" class="text-blue-400 hover:underline"
+            >ALMAHYRA SUKSES GROUP</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Modal -->
+    <script>
+      const services = {
+        taxCompliance: {
+          title: "Pemenuhan Pajak",
+          content:
+            "Layanan pemenuhan pajak yang mencakup seluruh aspek kepatuhan perpajakan untuk memastikan bahwa perusahaan Anda mematuhi semua peraturan perpajakan yang berlaku.",
+        },
+        taxConsulting: {
+          title: "Biro Jasa Konsultasi Pajak",
+          content:
+            "Konsultasi pajak profesional untuk membantu perusahaan Anda mengoptimalkan strategi perpajakan dan pengelolaan pajak yang lebih baik.",
+        },
+        taxReview: {
+          title: "Ulasan Pajak",
+          content:
+            "Peninjauan dan audit perpajakan menyeluruh untuk memastikan keakuratan dan kepatuhan terhadap regulasi pajak yang berlaku.",
+        },
+        taxDispute: {
+          title: "Sengketa Pajak",
+          content:
+            "Pendampingan dalam penyelesaian sengketa pajak, mulai dari negosiasi hingga proses hukum untuk membela kepentingan perusahaan Anda.",
+        },
+        bookkeeping: {
+          title: "Pembukuan",
+          content:
+            "Layanan pembukuan yang membantu perusahaan Anda mencatat transaksi keuangan dengan akurat dan sesuai standar.",
+        },
+        payroll: {
+          title: "Outsourcing Penggajian",
+          content:
+            "Pengelolaan penggajian yang efisien dan profesional, mulai dari perhitungan gaji hingga pengelolaan tunjangan.",
+        },
+        transferPricing: {
+          title: "Dokumentasi Harga Transfer",
+          content:
+            "Dokumentasi dan analisis harga transfer untuk memastikan kepatuhan perusahaan dengan peraturan perpajakan internasional.",
+        },
+        corporateSecretary: {
+          title: "Sekretaris Perusahaan",
+          content:
+            "Layanan sekretaris perusahaan untuk mendukung administrasi dan pengelolaan dokumen penting perusahaan Anda.",
+        },
+        otherServices: {
+          title: "Layanan Lainnya",
+          content:
+            "Berbagai layanan tambahan lainnya yang mendukung kebutuhan bisnis Anda, seperti konsultasi keuangan dan legalitas usaha.",
+        },
+      };
+
+      function openModal(service) {
+        document.getElementById("modalTitle").textContent =
+          services[service].title;
+        document.getElementById("modalContent").textContent =
+          services[service].content;
+        document.getElementById("serviceModal").classList.remove("hidden");
+      }
+
+      function closeModal() {
+        document.getElementById("serviceModal").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
